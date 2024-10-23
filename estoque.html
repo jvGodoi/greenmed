@@ -1,138 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="./css/estoque.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./icones/favicon.ico" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Controle de Estoque</title>
-  <link rel="stylesheet" href="./css/estoque.css">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
-  <nav class="navegacao">
-    <img src="./img/seta-voltar.svg" alt="" srcset="" class="seta-voltar">
-    <div class="logo">
-      <img src="./img/logo.png" alt="" class="img-logo">
-      <h3>GreenMed<br>Solutions</h3>
-    </div>
-    <div class="navegacao-container">
-      <ul class="navecagao-menu">
-        <li>
-          <a href="./estoque.html">
-            <img src="./img/estoque.svg" alt="">
-            Controle Estoque
-          </a>
-        </li>
-        <li>
-          <a href="./movimentacoes.html">
-            <img src="./img/movimentacoes.svg" alt="">
-            Movimentações
-          </a>
-        </li>
-      </ul>
-      <ul class="navecagao-menu">
-        <li>
-          <a href="#">
-            <img src="./img/configuracoes.svg" alt="">
-            Configurações
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="estoque-container">
-    <div class="estoque-cabecalho">
-      <h1>Controle de Estoque</h1>
-      <div class="cabecalho-estoque--perfil">
-        <h3>Usuário</h3>
-        <img src="./img/notificacoes.svg" alt="" srcset="" class="img-notificacoes">
-        <img src="./img/perfil.png" alt="" srcset="">
+  <body>
+    <nav class="navegacao">
+      <img src="./img/seta-voltar.svg" alt="" srcset="" class="seta-voltar" />
+      <div class="logo">
+        <a href="./index.html" class="voltar-login">
+          <img src="./img/logo.png" alt="" class="img-logo" />
+        </a>
+        <h3>GreenMed<br />Solutions</h3>
       </div>
-    </div>
-    <div class="estoque-produtos">
-      <div class="estoque-produtos-cabecalho">
-        <h2>Produtos</h2>
-        <div class="produtos-filtro">
-          <img src="./img/botao-filtro.svg" alt="">
-          <div class="btn-pesquisa">
-            <input type="search" class="btn-pesquisa" placeholder="Search">
-            <img src="./img/search.svg" class="search" alt="" srcset="">
-          </div>
-          <a href="#" id="" class="btn-novo-produto">Novo Produto</a>
-        </div>
-      </div>
-      <div class="estoque-produtos--status">
-        <ul>
+      <div class="navegacao-container">
+        <ul class="navecagao-menu">
           <li>
-            <a href="#" class="stat1">Todos</a>
+            <a href="./estoque.html">
+              <img src="./icones/estoque.svg" alt="" srcset="" />
+              Controle Estoque
+            </a>
           </li>
           <li>
-            <a href="#" class="stat2">Disponiveis</a>
+            <a href="./movimentacoes.html">
+              <img src="./icones/movimentacoes.svg" alt="" />
+              Movimentações
+            </a>
           </li>
+        </ul>
+        <ul class="navecagao-menu">
           <li>
-            <a href="#" class="stat2">Indisponiveis</a>
+            <a href="#">
+              <img src="./icones/configuracoes.svg" alt="" />
+              Configurações
+            </a>
           </li>
         </ul>
       </div>
-      <div class="estoque-produtos-tabela">
-        <table class="estoque-tabela">
-          <thead>
-            <tr>
-              <th>
-                <input type="checkbox" class="tabela-checkbox">
-              </th>
-              <th class="tabela-titulo">
-                ID
-                <img src="./img/botao-filtro2.svg" alt="" srcset="">
-              </th>
-              <th class="tabela-titulo">Nome
-                <img src="./img/botao-filtro2.svg" alt="" srcset="">
-              </th>
-              <th class="tabela-titulo">Teste
-                <img src="./img/botao-filtro2.svg" alt="" srcset="">
-              </th>
-              <th class="expandir"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><input type="checkbox" class="tabela-checkbox"></td>
-              <td>1</td>
-              <td>Echinacea</td>
-              <td>Avenir</td>
-              <td class="expandir">...</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" class="tabela-checkbox"></td>
-              <td>2</td>
-              <td>Camomila</td>
-              <td>Segoe UI</td>
-              <td class="expandir">...</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" class="tabela-checkbox"></td>
-              <td>3</td>
-              <td>Erva Doce</td>
-              <td>Roboto Slab</td>
-              <td class="expandir">...</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" class="tabela-checkbox"></td>
-              <td>4</td>
-              <td>Hortelã</td>
-              <td>Roboto</td>
-              <td class="expandir">...</td>
-            </tr>
-          </tbody>
-        </table>
+    </nav>
+
+    <div class="estoque-container">
+      <div class="estoque-cabecalho">
+        <h1>Controle de Estoque</h1>
+        <div class="cabecalho-estoque--perfil">
+          <h3>Usuário</h3>
+          <img
+            src="./img/notificacoes.svg"
+            alt=""
+            srcset=""
+            class="img-notificacoes"
+          />
+          <img src="./img/perfil.png" alt="" srcset="" />
+        </div>
+      </div>
+      <div class="estoque-produtos">
+        <div class="estoque-produtos-cabecalho">
+          <h2>Produtos</h2>
+          <div class="produtos-filtro">
+            <img src="./icones/filtrar.svg" alt="" class="btn-filtrar" />
+            <div class="btn-pesquisa">
+              <input type="search" class="btn-pesquisa" placeholder="Search" />
+              <img src="./img/search.svg" class="search" alt="" srcset="" />
+            </div>
+            <a href="#" id="" class="btn-novo-produto">Novo Produto</a>
+            <a href="#" id="" class="btn-novo-produto_respon">+</a>
+          </div>
+        </div>
+        <div class="estoque-produtos--status">
+          <ul>
+            <li>
+              <a href="#" class="stat1">Todos</a>
+            </li>
+            <li>
+              <a href="#" class="stat2">Disponiveis</a>
+            </li>
+            <li>
+              <a href="#" class="stat2">Indisponiveis</a>
+            </li>
+          </ul>
+        </div>
+        <div class="estoque-produtos--status-lista">
+          <form class="lista-status">
+            <!-- <label for="status" >Escolha um status:</label> -->
+            <select id="status" class="produtos-status-lista" name="status">
+              <option value="maçã">Todos</option>
+              <option value="banana">Disponíveis</option>
+              <option value="laranja">Indisponíveis</option>
+            </select>
+          </form>
+        </div>
+        <div class="estoque-produtos-tabela">
+          <table class="estoque-tabela">
+            <thead>
+              <tr>
+                <th>
+                  <input type="checkbox" class="tabela-checkbox" />
+                </th>
+                <th class="tabela-titulo">
+                  ID
+                  <img src="./img/botao-filtro2.svg" alt="" srcset="" />
+                </th>
+                <th class="tabela-titulo">
+                  Nome
+                  <img src="./img/botao-filtro2.svg" alt="" srcset="" />
+                </th>
+                <th class="tabela-titulo">
+                  Teste
+                  <img src="./img/botao-filtro2.svg" alt="" srcset="" />
+                </th>
+                <th class="expandir"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" class="tabela-checkbox" /></td>
+                <td>1</td>
+                <td>Echinacea</td>
+                <td>Avenir</td>
+                <td class="expandir">...</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="tabela-checkbox" /></td>
+                <td>2</td>
+                <td>Camomila</td>
+                <td>Segoe UI</td>
+                <td class="expandir">...</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="tabela-checkbox" /></td>
+                <td>3</td>
+                <td>Erva Doce</td>
+                <td>Roboto Slab</td>
+                <td class="expandir">...</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="tabela-checkbox" /></td>
+                <td>4</td>
+                <td>Hortelã</td>
+                <td>Roboto</td>
+                <td class="expandir">...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
-  </div>
-
-  <script src="./js/script.js"></script>
-</body>
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>
