@@ -1,9 +1,37 @@
 .conteudo-login {
-  padding: 0 105px;
+  padding: 0 60px;
 }
 
 .conteudo-login h2 {
   margin-bottom: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+
+}
+ .conteudo-login h2::before{
+  content: "";
+  height: 5px;
+  width: 35%;
+  display: flex;
+  position: absolute;
+  border-radius: 5px;
+  z-index: 1;
+  top: 40%;
+  left: 0;
+  background-color: #249479;
+} 
+.conteudo-login h2::after{
+  content: "";
+  height: 5px;
+  width: 35%;
+  display: flex;
+  position: absolute;
+  border-radius: 5px;
+  z-index: 1;
+  top: 40%;
+  right: 0;
+  background-color: #249479;
 }
 
 .conteudo-login--form {
@@ -15,10 +43,14 @@
 .conteudo-login--form input {
   width: 330px;
   padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #249479;
+  border-radius: 0px 10px 10px 0px;
+  border-right: 1px solid #249479;
+  border-top: 1px solid #249479;
+  border-bottom: 1px solid #249479;
+  border-left: none;
   outline: none;
   transition: 0.3s;
+  font-size: 1.8rem;
 }
 .conteudo-login--form input:hover {
   box-shadow: 0px 0px 5px 0px #1e816a;
@@ -45,6 +77,18 @@
   background-color: #17755f;
 }
 
+
+.login-usuario, .login-senha{
+  display: flex;
+  
+}
+.login-usuario img, .login-senha img{
+  padding: 0 20px;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid #249479;
+  background-color: #f5f5f5;
+}
+
 @media (max-width: 900px) {
   .conteudo-login {
     padding: 0 50px;
@@ -57,5 +101,9 @@
   }
   .conteudo-login {
     text-align: center;
+  }
+
+  .login{
+    height: 100vh;
   }
 }
